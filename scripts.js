@@ -74,6 +74,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Mobile menu functionality
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNavLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn && mobileNavLinks) {
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileNavLinks.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a nav link
+        mobileNavLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNavLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuBtn.contains(e.target) && !mobileNavLinks.contains(e.target)) {
+                mobileNavLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
+        });
+    }
+    
     // Intersection Observer for fade-in animations
     const observerOptions = {
         threshold: 0.1,

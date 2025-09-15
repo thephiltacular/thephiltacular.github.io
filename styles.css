@@ -103,6 +103,40 @@ header {
     width: 100%;
 }
 
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-secondary);
+    border-radius: 2px;
+    transition: var(--transition);
+    transform-origin: center;
+}
+
+.mobile-menu-btn.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -440,6 +474,14 @@ header {
     border: 1px solid var(--border-color);
 }
 
+/* Responsive PDF viewer */
+.pdf-embed {
+    width: 100%;
+    height: 70vh; /* Use viewport height for better responsiveness */
+    min-height: 500px;
+    max-height: 800px; /* Cap maximum height for very large screens */
+}
+
 /* Footer */
 .footer {
     background-color: var(--bg-primary);
@@ -508,7 +550,28 @@ header {
     }
     
     .nav-links {
-        gap: 1rem;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: var(--bg-primary);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
     }
     
     .hero {
@@ -550,8 +613,11 @@ header {
     }
     
     .btn {
-        width: 200px;
+        width: 100%;
+        max-width: 200px;
         text-align: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
     
     .projects {
@@ -574,6 +640,30 @@ header {
     .container {
         padding: 0 1rem;
     }
+    
+    /* Mobile PDF viewer */
+    .pdf-embed {
+        height: 400px;
+        min-height: 300px;
+    }
+    
+    /* Mobile resume section */
+    .resume {
+        padding: 3rem 0;
+    }
+    
+    .resume h2 {
+        font-size: 2rem;
+    }
+    
+    .resume-content {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .resume-actions {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -586,7 +676,33 @@ header {
     }
     
     .nav-links {
-        display: none; /* Could add mobile menu later */
+        display: none; /* Hidden by default on very small screens */
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    /* Small screen PDF viewer */
+    .pdf-embed {
+        height: 300px;
+        min-height: 250px;
+    }
+    
+    /* Small screen resume section */
+    .resume h2 {
+        font-size: 1.8rem;
+    }
+    
+    .resume-content {
+        padding: 0.75rem;
+    }
+    
+    /* Small screen buttons */
+    .btn {
+        max-width: 180px;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
     }
 }
 
