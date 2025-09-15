@@ -477,9 +477,9 @@ header {
 /* Responsive PDF viewer */
 .pdf-embed {
     width: 100%;
-    height: 70vh; /* Use viewport height for better responsiveness */
+    height: 90vh; /* Use viewport height for better responsiveness */
     min-height: 500px;
-    max-height: 800px; /* Cap maximum height for very large screens */
+    max-height: 1000px; /* Cap maximum height for very large screens */
 }
 
 /* Footer */
