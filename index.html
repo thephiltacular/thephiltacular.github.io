@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Mai - Portfolio | philipmai.dev</title>
+    <meta name="description" content="Philip Mai's portfolio showcasing projects in AI, trading algorithms, and software development">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Philip Mai</h1>
+                <ul class="nav-links">
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <h2>Hello, I'm Philip Mai</h2>
+                <p class="hero-subtitle">Software Developer & AI Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#resume" class="btn btn-secondary">View Resume</a>
+                    <a href="https://github.com/thephiltacular" class="btn btn-outline" target="_blank">GitHub</a>
+                </div>
+                <div class="about-content">
+                    <div class="personal-section">
+                        <h3>Personal Passion</h3>
+                        <p class="hero-description">
+                            Driven by curiosity and innovation, I thrive at the intersection of technology and human experience. 
+                            When I'm not coding, you'll find me exploring the latest in AI research, contributing to open-source projects, 
+                            or mentoring aspiring developers in the tech community.
+                        </p>
+                        <p class="hero-description">
+                            When I'm relaxing you'll find me experimenting with new recipes in the kitchen, tending to my garden, snowboarding, golfing, reading, or at the gym.
+                            I go where the dopamine takes me :)
+                        </p>
+                    </div>
+                    
+                    <div class="professional-section">
+                        <h3>Professional Expertise</h3>
+                        <p class="hero-description">
+                            With extensive experience in ADAS/AD systems and systems engineering, I specialize in developing 
+                            robust software solutions for autonomous vehicles and advanced driver assistance technologies. 
+                            My background spans AI/ML implementations, SW/HW Integrations, ROS, and full-stack development, 
+                            with a focus on safety-critical systems, sensor fusion, and real-time processing architectures.
+                        </p>
+                        <p class="hero-description">
+                            I excel at bridging the gap between cutting-edge research and production-ready systems, 
+                            leveraging containerization technologies, cloud orchestration, and scalable application design 
+                            to deliver high-performance solutions that meet stringent industry standards.
+                        </p>
+                        <p class="hero-description">
+                            Having worked in consulting for many years, I bring a client-focused mindset to every project, 
+                            ensuring that solutions are not only technically sound but also aligned with business objectives. Business development, client relations, and project management are all part of my skill set.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p class="section-description">Here are some of the projects I've been working on recently</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Voice AI Pipeline</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">AI/ML</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A containerized AI pipeline for real-time speech-to-text and text-to-speech conversion, 
+                            leveraging Whisper ASR and Coqui TTS models with Kubernetes orchestration. Features a 
+                            Gradio web interface, GPU acceleration, and local processing for privacy-focused voice applications.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/thephiltacular/voice-ai-pipeline" class="project-link" target="_blank">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Open Trading Algorithm</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Finance</span>
+                                <span class="tech-tag">Data Science</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive Python library for algorithmic trading, technical analysis, and financial 
+                            data processing. Integrates 7+ data providers, 50+ indicators, with smart caching to minimize 
+                            API costs. Built for performance and reliability in both research and production environments.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/thephiltacular/open_trading_algo" class="project-link" target="_blank">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>CRUD IAM Playground</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Go</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Rust</span>
+                                <span class="tech-tag">Backend</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A CRUD (Create, Read, Update, Delete) and IAM (Identity and Access Management) library 
+                            implemented in Go, Python, and Rust with consistent interfaces, comprehensive test suites, 
+                            and CI/CD. Demonstrates cross-language consistency and robust software engineering practices.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/thephiltacular/crud-iam-playground" class="project-link" target="_blank">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2>My Resume</h2>
+                <p class="section-description">Click below to view my resume</p>
+                
+                <div class="resume-toggle">
+                    <button id="resume-toggle-btn" class="btn btn-primary">View Resume</button>
+                </div>
+                
+                <div id="resume-content" class="resume-content" style="display: none;">
+                    <div class="resume-actions">
+                        <a href="Resume_SW_Philip.Mai_20250815.pdf" class="btn btn-secondary" download>Download PDF</a>
+                    </div>
+
+                    <div class="pdf-viewer">
+                        <embed src="Resume_SW_Philip.Mai_20250815.pdf" type="application/pdf" width="100%" height="600px" />
+                        <p>If the PDF doesn't load, <a href="Resume_SW_Philip.Mai_20250815.pdf" target="_blank">click here to view it directly</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Philip Mai</h3>
+                    <p>Software Developer & AI Enthusiast</p>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/thephiltacular" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/philip-mai-1673696b/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:philip.e.mai@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Projects</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/thephiltacular/voice-ai-pipeline" target="_blank">Voice AI Pipeline</a></li>
+                        <li><a href="https://github.com/thephiltacular/open_trading_algo" target="_blank">Open Trading Algo</a></li>
+                        <li><a href="https://github.com/thephiltacular/crud-iam-playground" target="_blank">CRUD IAM Playground</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Philip Mai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
